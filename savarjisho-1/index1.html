@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>savarjisho 1</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <thead>
+          <tr>
+            <th>Control Type</th>
+            <th>Date</th>
+            <th>Control</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Text box</td>
+            <td>Name:</td>
+            <td>
+              <input
+                placeholder="Enter name"
+                type="text"
+                name="name"
+                id="name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td>Password:</td>
+            <td><input type="password" name="password" id="password" /></td>
+          </tr>
+          <tr>
+            <td>Text area</td>
+            <td>Address:</td>
+            <td>
+              <textarea
+                placeholder="Enter address"
+                name="address"
+                id="address"
+                cols="20"
+                rows="2"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>Drop down list</td>
+            <td>Area:</td>
+            <td>
+              <select name="area" id="area">
+                <option value="center">Center</option>
+                <option value="Suburb">Suburb</option>
+                <option value="village">village</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Check box</td>
+            <td>Hobbies:</td>
+            <td>
+              <input type="checkbox" name="sport" id="sport" />
+              <label for="sport">Sport</label><br />
+              <input type="checkbox" name="reading" id="reading" />
+              <label for="reading">Reading</label><br />
+              <input type="checkbox" name="tv" id="tv" />
+              <label for="tv">T.V.</label><br />
+              <input type="checkbox" name="internet" id="internet" />
+              <label for="internet">Internet</label><br />
+            </td>
+          </tr>
+          <tr>
+            <td>Radio Buttons</td>
+            <td>Gender:</td>
+            <td>
+              <fieldset>
+                <legend>Gender selection</legend>
+                <input type="radio" id="male" name="male" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="female" value="female" />
+                <label for="female">Female</label>
+              </fieldset>
+            </td>
+          </tr>
+          <tr>
+            <td>File upload</td>
+            <td>Your image:</td>
+            <td>
+              <input type="file" id="image" name="image" />
+            </td>
+          </tr>
+          <tr>
+            <td>Buttons</td>
+            <td>Actions:</td>
+            <td>
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Reset" />
+              <input type="button" value="Button" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
